@@ -10,7 +10,7 @@ INSERT INTO VEHICULES  (Immatriculation,Ref_Modele,Date_Mise_Circulation,Kilomet
 
 
 INSERT INTO VEHICULES  (Immatriculation,Ref_Modele,Date_Mise_Circulation,Kilometrage,Prix) VALUES (
- '264Tunis142' 	'FF' ,	'02-11-2010' ,	'75000' 	,'19500'
+ '264Tunis142','FF' ,	'02-11-2010' ,	'75000' 	,'19500'
 );
 
 
@@ -74,7 +74,7 @@ INSERT INTO PERSONNES  (CIN,Nom,Prenom,Email,Num_Tel) VALUES (
 -------------------------------------
 
 INSERT INTO ACQUISITIONS  (Immatriculation,CIN,Date_Debut,Date_Fin) VALUES (
-'1245Tunis99' 	'03645148' 	'06-20-2007' 	'17-09-2010'
+'1245Tunis99','03645148','06-20-2007','17-09-2010'
 );
 
 
