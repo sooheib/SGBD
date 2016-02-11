@@ -4,13 +4,15 @@ select * from employees where job_id not  in('SA_MAN','AD_VP',null)
 NOT IN vs. NOT EXISTS vs. LEFT JOIN / IS NULL: Oracle
 
 Concat: ||
-length
+length: SELECT LENGTH('CANDIDE') "Length in characters"
+   FROM DUAL;
 trim
 ltrim ('n' from 'nation') - RTRIM('123000', '0') Result: '123'
 rtrim('char')
 lpad():SELECT LPAD('azerty', 4, 'x');  -- retourne 'azer'
 rpad()
-round()
+round():SELECT ROUND(15.193,1) "Round" FROM DUAL;
+
 trunc:TRUNC(125.815, 1)
 Result: 125.8
 to_date: SELECT MONTHS_BETWEEN
