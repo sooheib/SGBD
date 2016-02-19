@@ -24,6 +24,33 @@ to_char:TO_CHAR(sysdate, 'yyyy/mm/dd')-Result: '2003/07/09'
 to_number
 
 
+---
+DECODE( expression , search , result [, search , result]... [, default] )
+---
+SELECT last_id,job_id,salary,(
+CASE
+   WHEN job_id='IT_PROG' THEN salary*1.10
+   WHEN job_id='SI_CLERK' THEN salary*1.15
+   WHEN job_id='SA_REP' THEN salary*1.20
+
+   ELSE salary*1.50
+   END)
+as nv_salaire
+from emplyees m
+---
+SELECT last_id,last_name,job_id,salary,(
+DECODE( job_id , 'IT_PROG' , salary*1.10 , 'SI_CLERK' , salary*1.15,'SA_REP',salary*1.20 )
+as nv_salaire
+from emplyees m
+
+
+
+
+
+
+
+
+
 
 
 
