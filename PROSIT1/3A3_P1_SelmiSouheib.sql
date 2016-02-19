@@ -48,3 +48,6 @@ FOREIGN KEY (Immatriculation) REFERENCES VEHICULES(Immatriculation),
 FOREIGN KEY (CIN) REFERENCES PERSONNES(CIN),
 PRIMARY KEY (Ref_Contrat,Immatriculation,CIN)
 )
+
+
+
